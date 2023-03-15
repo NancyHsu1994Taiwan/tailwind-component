@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar {
+    @apply flex justify-between  py-4 px-2 rounded-lg;
+  }
+  .navbar-light {
+    @apply bg-blue-100;
+  }
+  .navbar-dark {
+    @apply bg-slate-800;
+  }
+  .logo {
+    @apply italic font-bold block p-1;
+  }
+
+  .logo-light {
+    @apply text-blue-900;
+  }
+  .logo-dark {
+    @apply text-blue-200;
+  }
+  .navList-btn {
+    @apply block p-1 mx-1 rounded;
+  }
+  .navList-btn-light {
+    @apply text-white;
+  }
+
+  .navList-btn:hover {
+    @apply bg-blue-200;
+  }
+  .navList-btn-light:hover {
+    @apply bg-slate-700;
+  }
+
+  .personal-btn {
+    @apply mx-1 p-1 block;
+  }
+  .personal-btn-light {
+    @apply text-white;
+  }
+  .personal-btn:hover {
+    @apply text-gray-100;
+  }
+  .personal-btn-light:hover {
+    @apply text-gray-600;
+  }
+
+  .avatar {
+    @apply overflow-hidden;
+  }
+
+  .card {
+    @apply h-72 bg-white rounded;
+  }
+
+  .card-img {
+    @apply h-60 overflow-hidden;
+  }
+}
