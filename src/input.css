@@ -3,6 +3,46 @@
 @tailwind utilities;
 
 @layer components {
+  .btn-primary {
+    @apply inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-primary:hover {
+    @apply bg-blue-500;
+  }
+  .btn-primary:focus {
+    @apply bg-blue-800;
+  }
+  .btn-secondary {
+    @apply inline-block bg-green-800 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-secondary:hover {
+    @apply bg-green-500;
+  }
+  .btn-secondary:focus {
+    @apply bg-green-900 border border-teal-900 border-2;
+  }
+
+  .input-btn {
+    @apply inline-block font-bold mx-8 py-2 px-4 rounded-3xl cursor-pointer;
+  }
+
+  .input-btn-light:hover {
+    @apply drop-shadow-lg;
+  }
+  .input-btn-light:checked {
+    @apply bg-slate-300;
+  }
+  .input-btn-light {
+    @apply bg-slate-100;
+  }
+  .input-btn-dark {
+    @apply bg-slate-800 text-white;
+  }
+  .input-btn-dark:hover,
+  .input-btn-dark:hover:checked {
+    @apply bg-black;
+  }
+
   .navbar {
     @apply flex justify-between  py-4 px-2 rounded-lg;
   }
@@ -34,6 +74,14 @@
   }
   .navList-btn-light:hover {
     @apply bg-slate-700;
+  }
+
+  .mobile-list {
+    @apply hidden fixed bg-blue-100;
+    left: -100%;
+    transition: all 0.5s;
+    width: 100%;
+    top: 100px;
   }
 
   .personal-btn {

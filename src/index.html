@@ -14,18 +14,120 @@
   <body>
     <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <div class="block scroll-snap-none sm:scroll-m-10"></div>
-    
+    <!-- button -->
+    <div class="btn-area my-8">
+      <h2>primary buttons</h2>
+      <a href="#" class="btn-primary text-xs">button</a>
+      <a href="#" class="btn-primary text-sm">button</a>
+      <a href="#" class="btn-primary text-base">button</a>
+      <a href="#" class="btn-primary text-lg">button</a>
+      <a href="#" class="btn-primary text-xl">button</a>
+      <h2>secondary-button</h2>
+      <a href="" class="btn-secondary">button</a>
+      <a href="" class="btn-secondary">button</a>
+      <a href="" class="btn-secondary">button</a>
+      <a href="" class="btn-secondary">button</a>
+      <a href="" class="btn-secondary">button</a>
+    </div>
+    <!-- radio light mode -->
+    <h2>radio button</h2>
+    <div class="input-area my-8 flex">
+      <!-- light mode -->
+      <label for="choice-1" class="input-btn input-btn-light peer-checked/choice-1:text-sky-500">
+        <input type="radio" id="choice-1" name="radio" class="peer/choice-1">
+        <span>choice-1</span>
+      </label>
+      <label for="choice-" class="input-btn input-btn-light peer-checked/choice-2:text-sky-500">
+        <input type="radio" id="choice-2" name="radio"class="peer/choice-2">
+        <span>choice-2</span>
+      </label>
+      <label for="choice-3" class="input-btn input-btn-light peer-checked/choice-3:text-sky-500">
+        <input type="radio" id="choice-3" name="radio"class="peer/choice-3">
+        <span>choice-3</span>
+      </label>
+      
+    </div>
+    <!-- radio dark-mode -->
+    <div class="input-area my-8">
+      <label for="choice-4" class="input-btn input-btn-dark peer-checked/choice-4:text-sky-500">
+        <input type="radio" id="choice-ˋ" name="radio" class="peer/choice-4">
+        <span>choice-1</span>
+      </label>
+      <label for="choice-5" class="input-btn input-btn-dark peer-checked/choice-5:text-sky-500">
+        <input type="radio" id="choice-5" name="radio"class="peer/choice-5">
+        <span>choice-2</span>
+      </label>
+      <label for="choice-6" class="input-btn input-btn-dark peer-checked/choice-6:text-sky-500">
+        <input type="radio" id="choice-6" name="radio"class="peer/choice-6">
+        <span>choice-3</span>
+      </label>
+    </div>
+    <!-- sign up card -->
+    <div class="sign-up mx-auto bg-slate-100 p-4 rounded-lg w-1/2 my-8">
+      <h3 class="font-bold text-blue-900 text-4xl text-center">Create An Account</h3>
+      <!-- name -->
+      <div class="my-2">
+        <div class="title">
+          <i class="fa-regular fa-user text-blue-300 my-3"></i>
+          <span class="text-xl text-blue-300 my-3">Name</span>
+        </div>
+        <input type="text" name="name" id="name" placeholder="Name" class="block w-full">
+      </div>
+      <!-- email -->
+      <div class="my-2">
+        <div class="title">
+          <i class="fa-regular fa-envelope text-blue-300 my-3"></i>
+          <span class="text-xl text-blue-300 my-3">E-mail</span>
+        </div>
+        <input type="text" name="email" id="name" placeholder="email" class="block w-full">
+      </div>      
+      <!-- password -->
+      <div class="my-2">
+        <div class="title">
+          <i class="fa-regular fa-lock text-blue-300 my-3"></i>
+          <span class="text-xl text-blue-300 my-3">Password</span>
+        </div>
+        <input type="text" name="password" id="name" placeholder="password" class="block w-full">
+      </div>
+      <div class="my-2 flex flex-row-reverse">
+        <a href="#" class="block p-2 w-24 text-center bg-blue-300 text-blue-500 rounded-2xl hover:bg-blue-400">Sign Up</a>
+      </div>
+      
+    </div>
     <!-- navbar light-mode -->
     <div class="navbar navbar-light">
       <a href="#" class="logo logo-light">Components</a>
       <div class="nav-content flex">
-        <ul class="list flex mx-2">
+        <ul class="list flex mx-2 hidden md:flex">
           <li>
             <a href="" class="navList-btn">Home</a>
           </li>
-          <li><a href="" class="navList-btn">About</a></li>
-          <li><a href="" class="navList-btn">Products</a></li>
-          <li><a href="" class="navList-btn">Contact</a></li>
+          <li>
+            <a href="" class="navList-btn">About</a>
+          </li>
+          <li>
+            <a href="" class="navList-btn">Products</a>
+          </li>
+          <li>
+            <a href="" class="navList-btn">Contact</a>
+          </li>
+        </ul>
+        <!-- mobile navbar -->
+        <input type="checkbox" id="check"s class="hidden">
+        <button for="check" class="burger mx-1 p-2 rounded-md block md:hidden lg:hidden xl:hidden hover:cursor-pointer hover:bg-blue-200" aria-controls="mobile-menu" @click="open = !open" aria-expanded="true" x-bind:aria-expanded="open.toString()"><i class="fa-solid fa-bars"></i></button>
+        <ul x-description="Mobile menu, show/hide based on menu state."  class="mobile-list mobile-list-ligt" id="mobile-menu" x-show="open">
+          <li>
+            <a href="" class="navList-btn">Home</a>
+          </li>
+          <li>
+            <a href="" class="navList-btn">About</a>
+          </li>
+          <li>
+            <a href="" class="navList-btn">Products</a>
+          </li>
+          <li>
+            <a href="" class="navList-btn">Contact</a>
+          </li>
         </ul>
         <ul class="personal flex">
           <li>
@@ -51,13 +153,28 @@
     <div class="navbar navbar-dark my-3">
       <a href="#" class="logo logo-dark">Components</a>
       <div class="nav-content flex">
-        <ul class="list flex mx-2">
+        <ul class="list hidden md:flex mx-2">
           <li>
             <a href="" class="navList-btn navList-btn-light">Home</a>
           </li>
           <li><a href="" class="navList-btn navList-btn-light">About</a></li>
           <li><a href="" class="navList-btn navList-btn-light">Products</a></li>
           <li><a href="" class="navList-btn navList-btn-light">Contact</a></li>
+        </ul>
+        <a href="#" class="burger mx-1 p-1 block md:hidden lg:hidden xl:hidden text-white"><i class="fa-solid fa-bars"></i></a>
+        <ul class="mobile-list-dark hidden">
+          <li>
+            <a href="" class="navList-btn">Home</a>
+          </li>
+          <li>
+            <a href="" class="navList-btn">About</a>
+          </li>
+          <li>
+            <a href="" class="navList-btn">Products</a>
+          </li>
+          <li>
+            <a href="" class="navList-btn">Contact</a>
+          </li>
         </ul>
         <ul class="personal flex">
           <li>
@@ -151,5 +268,40 @@
       </div>
 
     </div>
+
+
+
+    <!-- btn test -->
+    <nav class="w-full bg-slate-300 h-12">
+      <!-- PC nav -->
+      <ul class="hidden md:flex">
+        <li class="m-3">item 1</li>
+        <li class="m-3">item 2</li>
+        <li class="m-3">item 3</li>
+        <li class="m-3">item 4</li>
+      </ul>
+      <button class="block group w-full md:hidden ">
+        <i class="fa-solid fa-bars"></i>
+        <!-- mobile nav -->
+        <div class="relative block  w-full h-auto ">
+          <ul class="absolute top-6 block md:hidden w-full bg-slate-500">
+            <li>
+              <a href="#" class="block">item 1</a>  
+            </li>
+            <li>
+              <a href="#" class="block">item 2</a>
+            </li>
+            <li>
+              <a href="#" class="block">item 3</a>
+            </li>
+            <li>
+              <a href="#" class="block">item 4</a>
+            </li>
+          </ul>
+        </div>
+      </button>
+
+      
+    </nav>
   </body>
 </html>
