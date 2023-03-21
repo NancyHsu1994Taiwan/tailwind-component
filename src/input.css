@@ -66,7 +66,7 @@
     @apply block p-1 mx-1 rounded;
   }
   .navList-btn-light {
-    @apply text-white;
+    @apply block p-1 mx-1 rounded text-white;
   }
 
   .navList-btn:hover {
@@ -74,14 +74,6 @@
   }
   .navList-btn-light:hover {
     @apply bg-slate-700;
-  }
-
-  .mobile-list {
-    @apply hidden fixed bg-blue-100;
-    left: -100%;
-    transition: all 0.5s;
-    width: 100%;
-    top: 100px;
   }
 
   .personal-btn {
@@ -95,6 +87,12 @@
   }
   .personal-btn-light:hover {
     @apply text-gray-600;
+  }
+  .personal-btn-dark {
+    @apply text-blue-200;
+  }
+  .personal-btn-dark:hover {
+    @apply text-white;
   }
 
   .avatar {

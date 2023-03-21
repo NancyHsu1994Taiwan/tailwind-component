@@ -11,9 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <div class="block scroll-snap-none sm:scroll-m-10"></div>
+  <body class="p-2">
     <!-- button -->
     <div class="btn-area my-8">
       <h2>primary buttons</h2>
@@ -23,55 +21,80 @@
       <a href="#" class="btn-primary text-lg">button</a>
       <a href="#" class="btn-primary text-xl">button</a>
       <h2>secondary-button</h2>
-      <a href="" class="btn-secondary">button</a>
-      <a href="" class="btn-secondary">button</a>
-      <a href="" class="btn-secondary">button</a>
-      <a href="" class="btn-secondary">button</a>
-      <a href="" class="btn-secondary">button</a>
+      <a href="" class="btn-secondary text-xs">button</a>
+      <a href="" class="btn-secondary text-sm">button</a>
+      <a href="" class="btn-secondary text-base">button</a>
+      <a href="" class="btn-secondary text-lg">button</a>
+      <a href="" class="btn-secondary text-xl">button</a>
     </div>
     <!-- radio light mode -->
     <h2>radio button</h2>
     <div class="input-area my-8 flex">
       <!-- light mode -->
-      <label for="choice-1" class="input-btn input-btn-light peer-checked/choice-1:text-sky-500">
-        <input type="radio" id="choice-1" name="radio" class="peer/choice-1">
+      <label
+        for="choice-1"
+        class="input-btn input-btn-light peer-checked/choice-1:text-sky-500"
+      >
+        <input type="radio" id="choice-1" name="radio" class="peer/choice-1" />
         <span>choice-1</span>
       </label>
-      <label for="choice-" class="input-btn input-btn-light peer-checked/choice-2:text-sky-500">
-        <input type="radio" id="choice-2" name="radio"class="peer/choice-2">
+      <label
+        for="choice-2"
+        class="input-btn input-btn-light peer-checked/choice-2:text-sky-500"
+      >
+        <input type="radio" id="choice-2" name="radio" class="peer/choice-2" />
         <span>choice-2</span>
       </label>
-      <label for="choice-3" class="input-btn input-btn-light peer-checked/choice-3:text-sky-500">
-        <input type="radio" id="choice-3" name="radio"class="peer/choice-3">
+      <label
+        for="choice-3"
+        class="input-btn input-btn-light peer-checked/choice-3:text-sky-500"
+      >
+        <input type="radio" id="choice-3" name="radio" class="peer/choice-3" />
         <span>choice-3</span>
       </label>
-      
     </div>
     <!-- radio dark-mode -->
     <div class="input-area my-8">
-      <label for="choice-4" class="input-btn input-btn-dark peer-checked/choice-4:text-sky-500">
-        <input type="radio" id="choice-ˋ" name="radio" class="peer/choice-4">
+      <label
+        for="choice-4"
+        class="input-btn input-btn-dark peer-checked/choice-4:text-sky-500"
+      >
+        <input type="radio" id="choice-4ˋ" name="radio" class="peer/choice-4" />
         <span>choice-1</span>
       </label>
-      <label for="choice-5" class="input-btn input-btn-dark peer-checked/choice-5:text-sky-500">
-        <input type="radio" id="choice-5" name="radio"class="peer/choice-5">
+      <label
+        for="choice-5"
+        class="input-btn input-btn-dark peer-checked/choice-2:text-sky-500"
+      >
+        <input type="radio" id="choice-5" name="radio" class="peer/choice-5" />
         <span>choice-2</span>
       </label>
-      <label for="choice-6" class="input-btn input-btn-dark peer-checked/choice-6:text-sky-500">
-        <input type="radio" id="choice-6" name="radio"class="peer/choice-6">
+      <label
+        for="choice-6"
+        class="input-btn input-btn-dark peer-checked/choice-6:text-sky-500"
+      >
+        <input type="radio" id="choice-6" name="radio" class="peer/choice-6" />
         <span>choice-3</span>
       </label>
     </div>
     <!-- sign up card -->
     <div class="sign-up mx-auto bg-slate-100 p-4 rounded-lg w-1/2 my-8">
-      <h3 class="font-bold text-blue-900 text-4xl text-center">Create An Account</h3>
+      <h3 class="font-bold text-blue-900 text-4xl text-center">
+        Create An Account
+      </h3>
       <!-- name -->
       <div class="my-2">
         <div class="title">
           <i class="fa-regular fa-user text-blue-300 my-3"></i>
           <span class="text-xl text-blue-300 my-3">Name</span>
         </div>
-        <input type="text" name="name" id="name" placeholder="Name" class="block w-full">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          class="block w-full"
+        />
       </div>
       <!-- email -->
       <div class="my-2">
@@ -79,25 +102,42 @@
           <i class="fa-regular fa-envelope text-blue-300 my-3"></i>
           <span class="text-xl text-blue-300 my-3">E-mail</span>
         </div>
-        <input type="text" name="email" id="name" placeholder="email" class="block w-full">
-      </div>      
+        <input
+          type="text"
+          name="email"
+          id="name"
+          placeholder="email"
+          class="block w-full"
+        />
+      </div>
       <!-- password -->
       <div class="my-2">
         <div class="title">
           <i class="fa-regular fa-lock text-blue-300 my-3"></i>
           <span class="text-xl text-blue-300 my-3">Password</span>
         </div>
-        <input type="text" name="password" id="name" placeholder="password" class="block w-full">
+        <input
+          type="text"
+          name="password"
+          id="name"
+          placeholder="password"
+          class="block w-full"
+        />
       </div>
       <div class="my-2 flex flex-row-reverse">
-        <a href="#" class="block p-2 w-24 text-center bg-blue-300 text-blue-500 rounded-2xl hover:bg-blue-400">Sign Up</a>
+        <a
+          href="#"
+          class="block p-2 w-24 text-center bg-blue-300 text-blue-500 rounded-2xl hover:bg-blue-400"
+          >Sign Up</a
+        >
       </div>
-      
     </div>
     <!-- navbar light-mode -->
-    <div class="navbar navbar-light">
+    <div class="navbar relative navbar-light relative">
       <a href="#" class="logo logo-light">Components</a>
+
       <div class="nav-content flex">
+        <!-- PC navbar -->
         <ul class="list flex mx-2 hidden md:flex">
           <li>
             <a href="" class="navList-btn">Home</a>
@@ -113,22 +153,27 @@
           </li>
         </ul>
         <!-- mobile navbar -->
-        <input type="checkbox" id="check"s class="hidden">
-        <button for="check" class="burger mx-1 p-2 rounded-md block md:hidden lg:hidden xl:hidden hover:cursor-pointer hover:bg-blue-200" aria-controls="mobile-menu" @click="open = !open" aria-expanded="true" x-bind:aria-expanded="open.toString()"><i class="fa-solid fa-bars"></i></button>
-        <ul x-description="Mobile menu, show/hide based on menu state."  class="mobile-list mobile-list-ligt" id="mobile-menu" x-show="open">
-          <li>
-            <a href="" class="navList-btn">Home</a>
-          </li>
-          <li>
-            <a href="" class="navList-btn">About</a>
-          </li>
-          <li>
-            <a href="" class="navList-btn">Products</a>
-          </li>
-          <li>
-            <a href="" class="navList-btn">Contact</a>
-          </li>
-        </ul>
+        <button
+          class="burger mx-1 rounded-md block md:hidden lg:hidden xl:hidden hover:cursor-pointer group"
+        >
+          <i class="fa-solid fa-bars hover:text-white"></i>
+          <ul
+            class="mobile-list bg-blue-100 absolute top-0 -right-full opacity-0 w-10/12 group-focus:right-0 group-focus:opacity-100"
+          >
+            <li>
+              <a href="" class="navList-btn">Home</a>
+            </li>
+            <li>
+              <a href="" class="navList-btn">About</a>
+            </li>
+            <li>
+              <a href="" class="navList-btn">Products</a>
+            </li>
+            <li>
+              <a href="" class="navList-btn">Contact</a>
+            </li>
+          </ul>
+        </button>
         <ul class="personal flex">
           <li>
             <a href="" class="personal-btn"
@@ -141,16 +186,22 @@
             ></a>
           </li>
           <li>
-            <a href="" class="personal-btn personal-btn-dark"
-              ><i class="fa-solid fa-user"></i
-            ></i
-            ></a>
+            <a href="" class="personal-btn">
+              <i class="fa-solid fa-user"></i>
+            </a>
           </li>
         </ul>
       </div>
     </div>
+    <div class="text p-4">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt
+        facilis quae itaque doloribus sequi fuga, illum ex laudantium maxime
+        voluptatum, debitis ab saepe ipsam odit molestiae autem temporibus
+      </p>
+    </div>
     <!-- navbar dark-mode -->
-    <div class="navbar navbar-dark my-3">
+    <div class="navbar relative navbar-dark my-3">
       <a href="#" class="logo logo-dark">Components</a>
       <div class="nav-content flex">
         <ul class="list hidden md:flex mx-2">
@@ -161,147 +212,159 @@
           <li><a href="" class="navList-btn navList-btn-light">Products</a></li>
           <li><a href="" class="navList-btn navList-btn-light">Contact</a></li>
         </ul>
-        <a href="#" class="burger mx-1 p-1 block md:hidden lg:hidden xl:hidden text-white"><i class="fa-solid fa-bars"></i></a>
-        <ul class="mobile-list-dark hidden">
-          <li>
-            <a href="" class="navList-btn">Home</a>
-          </li>
-          <li>
-            <a href="" class="navList-btn">About</a>
-          </li>
-          <li>
-            <a href="" class="navList-btn">Products</a>
-          </li>
-          <li>
-            <a href="" class="navList-btn">Contact</a>
-          </li>
-        </ul>
+        <button
+          class="burger mx-1 rounded-md block md:hidden lg:hidden xl:hidden hover:cursor-pointer group"
+        >
+          <i class="fa-solid fa-bars text-blue-200 hover:text-white"></i>
+          <ul
+            class="mobile-list bg-slate-800 absolute top-0 -right-full opacity-0 w-10/12 group-focus:right-0 group-focus:opacity-100"
+          >
+            <li>
+              <a href="" class="navList-btn-light">Home</a>
+            </li>
+            <li>
+              <a href="" class="navList-btn-light">About</a>
+            </li>
+            <li>
+              <a href="" class="navList-btn-light">Products</a>
+            </li>
+            <li>
+              <a href="" class="navList-btn-light">Contact</a>
+            </li>
+          </ul>
+        </button>
         <ul class="personal flex">
           <li>
-            <a href="" class="personal-btn personal-btn-light"
+            <a href="" class="personal-btn personal-btn-dark"
               ><i class="fa-regular fa-bell"></i
             ></a>
           </li>
           <li>
-            <a href="" class="personal-btn personal-btn-light"
+            <a href="" class="personal-btn personal-btn-dark"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
           </li>
           <li>
-            <a href="" class="personal-btn personal-btn-light"
-              ><i class="fa-solid fa-user"></i
-            ></a>
+            <a href="" class="personal-btn personal-btn-dark">
+              <i class="fa-solid fa-user"></i>
+            </a>
           </li>
         </ul>
       </div>
     </div>
-
+    <div class="text p-4">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt
+        facilis quae itaque doloribus sequi fuga, illum ex laudantium maxime
+        voluptatum, debitis ab saepe ipsam odit molestiae autem temporibus
+      </p>
+    </div>
     <!-- product list -->
     <div class="grid grid-cols-3 grid-rows-4 gap-2">
       <div class="card overflow-hidden">
         <div class="card-img">
           <a href="">
-            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="" srcset="" class="h-full w-full object-scale-down object-center hover:object-cover duration-150">
+            <img
+              src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+              alt=""
+              srcset=""
+              class="h-full w-full object-scale-down object-center hover:object-cover duration-150"
+            />
           </a>
         </div>
-        <div class="card-body bg-gray-300 flex justify-between content-center p-1">
+        <div
+          class="card-body bg-gray-300 flex justify-between content-center p-1"
+        >
           <div class="">
             <p class="text-slate-900">Basic-T</p>
             <p class="text-slate-600">black</p>
           </div>
           <div class="flex flex-col justify-between">
             <p>NT$ 500</p>
-            <a href="" class="text-xs block hover:border-2 border-white">add to cart</a>
+            <a href="" class="text-xs block hover:border-2 border-white"
+              >add to cart</a
+            >
           </div>
         </div>
       </div>
       <div class="card overflow-hidden">
         <div class="card-img">
           <a href="">
-            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="" srcset="" class="h-full w-full object-scale-down object-center hover:object-cover duration-150">
+            <img
+              src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+              alt=""
+              srcset=""
+              class="h-full w-full object-scale-down object-center hover:object-cover duration-150"
+            />
           </a>
         </div>
-        <div class="card-body bg-gray-300 flex justify-between content-center p-1">
+        <div
+          class="card-body bg-gray-300 flex justify-between content-center p-1"
+        >
           <div class="">
             <p class="text-slate-900">Basic-T</p>
             <p class="text-slate-600">black</p>
           </div>
           <div class="flex flex-col justify-between">
             <p>NT$ 500</p>
-            <a href="" class="text-xs block hover:border-2 border-white">add to cart</a>
+            <a href="" class="text-xs block hover:border-2 border-white"
+              >add to cart</a
+            >
           </div>
         </div>
       </div>
       <div class="card overflow-hidden">
         <div class="card-img">
           <a href="">
-            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="" srcset="" class="h-full w-full object-scale-down object-center hover:object-cover duration-150">
+            <img
+              src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+              alt=""
+              srcset=""
+              class="h-full w-full object-scale-down object-center hover:object-cover duration-150"
+            />
           </a>
         </div>
-        <div class="card-body bg-gray-300 flex justify-between content-center p-1">
+        <div
+          class="card-body bg-gray-300 flex justify-between content-center p-1"
+        >
           <div class="">
             <p class="text-slate-900">Basic-T</p>
             <p class="text-slate-600">black</p>
           </div>
           <div class="flex flex-col justify-between">
             <p>NT$ 500</p>
-            <a href="" class="text-xs block hover:border-2 border-white">add to cart</a>
+            <a href="" class="text-xs block hover:border-2 border-white"
+              >add to cart</a
+            >
           </div>
         </div>
       </div>
       <div class="card overflow-hidden">
         <div class="card-img">
           <a href="">
-            <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="" srcset="" class="h-full w-full object-scale-down object-center hover:object-cover duration-150">
+            <img
+              src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg"
+              alt=""
+              srcset=""
+              class="h-full w-full object-scale-down object-center hover:object-cover duration-150"
+            />
           </a>
         </div>
-        <div class="card-body bg-gray-300 flex justify-between content-center p-1">
+        <div
+          class="card-body bg-gray-300 flex justify-between content-center p-1"
+        >
           <div class="">
             <p class="text-slate-900">Basic-T</p>
             <p class="text-slate-600">black</p>
           </div>
           <div class="flex flex-col justify-between">
             <p>NT$ 500</p>
-            <a href="" class="text-xs block hover:border-2 border-white">add to cart</a>
+            <a href="" class="text-xs block hover:border-2 border-white"
+              >add to cart</a
+            >
           </div>
         </div>
       </div>
-
     </div>
-
-
-
-    <!-- btn test -->
-    <nav class="w-full bg-slate-300 h-12">
-      <!-- PC nav -->
-      <ul class="hidden md:flex">
-        <li class="m-3">item 1</li>
-        <li class="m-3">item 2</li>
-        <li class="m-3">item 3</li>
-        <li class="m-3">item 4</li>
-      </ul>
-      <button class="block group w-full md:hidden ">
-        <i class="fa-solid fa-bars"></i>
-        <!-- mobile nav -->
-        <div class="relative block  w-full h-auto ">
-          <ul class="absolute top-6 block md:hidden w-full bg-slate-500">
-            <li>
-              <a href="#" class="block">item 1</a>  
-            </li>
-            <li>
-              <a href="#" class="block">item 2</a>
-            </li>
-            <li>
-              <a href="#" class="block">item 3</a>
-            </li>
-            <li>
-              <a href="#" class="block">item 4</a>
-            </li>
-          </ul>
-        </div>
-      </button>
-
-      
-    </nav>
   </body>
 </html>
